@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links para fontes e ícones -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Pedro Lima | Portifólio</title>
+</head>
+
+<body>
+	<!-- navBar -->
+	<div class="navbar">
+		<h1>Pedro Lima</h1>
+		<ul>
+			<li><a href="/">INÍCIO</a></li>
+			<li><a href="/portifolio.html">PROJETOS</a></li>
+			<li><a href="/formacao.html">FORMAÇÃO</a></li>
+			<li><a href="/sobre.html">QUEM SOU EU?</a></li>
+			<li><a href="/contato.html">CONTATO</a></li>
+		</ul>
+	</div>
+
+	<div class="sidebarBackground"> <!-- começa o codigo html aqui, o resto seria "componentes" -->
+		<div class="profileInfos">
+			<!-- Imagem do perfil -->
+			<img src="./public/img/FotoPessoal.png" alt="FotoPessoalPedroLima">
+			<div class="infomacoesContainer">
+				<!-- Nome e título -->
+				<h1>Pedro Lima</h1>
+				<h2>Desenvolvedor Fullstack Junior</h2>
+				<div class="stacks">
+					<!-- Stack de tecnologias -->
+					<div class="row">
+						<!-- Ícones das linguagens e tecnologias dividos em 2 linhas (obs: eu sei q tem como fazer com css, mas nesse caso por ser pequeno a quantidade optei por fazer direto no html) -->
+						<img src="./public/img/pythonIcon.png" alt="python">
+						<img src="./public/img/Javascript Icon.png" alt="javascript">
+						<img src="./public/img/nodeIcon.png" alt="node">
+						<img src="./public/img/htmlIcon.png" alt="html">
+						<img src="./public/img/cssIcon.png" alt="css">
+					</div>
+					<div class="row">
+						<img src="./public/img/reactIcon.png" alt="react">
+						<img src="./public/img/ExpressIcon.png" alt="express">
+						<img src="./public/img/MongoDB-Logo.png" alt="mongodb">
+						<img src="./public/img/sqlServerIcon.png" alt="sqlserver">
+						<img src="./public/img/PuppeteerIcon.png" alt="puppeteer">
+					</div>
+					<span style="font-weight: 200; font-style: italic;">Socket.io, Tailwind, bootstrap, entre outras..
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Rodapé -->
+	<footer id="footer">
+		<ul class="subMenu_Footer">
+			<!-- Links para as diferentes seções -->
+			<li><a href="/">INÍCIO</a></li>
+			<li><a href="/portifolio.html">PROJETOS</a></li>
+			<li><a href="/formacao.html">FORMAÇÃO</a></li>
+			<li><a href="/sobre.html">QUEM SOU EU?</a></li>
+			<li><a href="/contato.html">CONTATO</a></li>
+		</ul>
+		<!-- Informação adicional -->
+		<p>Exclusivo para navegadores de desktop.<br><br></p>
+		<p>Pedro Paulo de Lima&copy; 2024</p>
+		<!-- Ícones de redes sociais -->
+		<div class="social-icons">
+			<a href="https://www.instagram.com/onlylimaa/" target="_blank"><i
+					class="fab fa-instagram social-icon"></i></a>
+			<a href="https://www.linkedin.com/in/pedropdelima/" target="_blank"><i
+					class="fab fa-linkedin social-icon"></i></a>
+			<a href="https://github.com/pedrobits" target="_blank"><i class="fab fa-github social-icon"></i></a>
+		</div>
+	</footer>
+
+</body>
+
+</html>

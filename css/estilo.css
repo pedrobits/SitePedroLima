@@ -1,0 +1,523 @@
+/* codigo abaixo é apenas um reset CSS fonte: https://meyerweb.com/eric/tools/css/reset/*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* codigo acima é apenas um reset CSS */
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    background-color: black;
+    padding: 0 2rem;
+}
+
+.navbar h1 {
+    color: #BCC9AE;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar li a {
+    display: block;
+    padding: 14px 16px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar li a:hover {
+    background-color: #BCC9AE;
+}
+
+/* fim navbar */
+
+/* fundo */
+.sidebarBackground {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #BCC9AE 30%, #f0f0f0 30%);
+    padding: 4%;
+    height: 100%;
+    min-height: 40em;
+}
+
+/* parte de informações sobre mim (resumo) */
+
+.profileInfos {
+    padding: 10rem;
+    display: flex;
+    align-items: center;
+}
+
+.profileInfos img {
+    width: 40%;
+    height: 40%;
+    margin-right: 20px;
+}
+
+.infomacoesContainer {
+    margin-left: 20px;
+}
+
+.infomacoesContainer h1 {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #BCC9AE;
+}
+
+.infomacoesContainer h2 {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    color: #ADC3C2;
+}
+
+/* Fim da parte de informações sobre mim (resumo) */
+
+/* stacks */
+
+.stacks {
+    margin-top: 20px;
+}
+
+.stacks .row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.stacks .row img {
+    width: 78px;
+    height: 78px;
+    transition: transform 0.3s ease;
+}
+
+.stacks .row img:hover {
+    transform: scale(1.1);
+}
+
+/* FIM stacks */
+
+/* Parte das formações */
+
+.formation,
+.course {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course header {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.course header h3 {
+    margin-bottom: 5px;
+}
+
+.course article {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.course article a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #BCC9AE;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.course article a:hover {
+    background-color: #86a168;
+}
+
+
+.formation header {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.formation article {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* fim da Parte das formações */
+
+/* Pagina sobre mim */
+
+.sobreMim {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    background-color: whitesmoke;
+    box-shadow: 60px 1px 80px #ADC3C2;
+    margin: 0 auto;
+    padding: 5rem;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid #8CA884;
+    margin-right: 3rem;
+    height: 100%;
+}
+
+.foto {
+    width: 70%;
+    height: 50%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.resumo {
+    text-align: center;
+}
+
+.resumo h1 {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #BCC9AE;
+    margin-bottom: 5px;
+}
+
+.resumo h2 {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 25px;
+    color: #ADC3C2;
+    margin-top: 0;
+}
+
+.social-icon_aboutMe {
+    padding: 10px;
+    color: #ADC3C2;
+}
+
+.info {
+    text-align: justify;
+    flex: 1;
+}
+
+.info .descricao {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: darkslategray;
+}
+
+/* Fim da pagina sobre mim */
+
+/* Pagina de contato */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    background-color: #fff;
+    border-radius: 8px;
+    height: auto;
+    max-height: 60vh;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.esquerda {
+    margin: 3rem;
+}
+
+.titulo-aplicativo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.grupo-formulario-aplicativo {
+    margin-bottom: 15px;
+}
+
+.formulario-aplicativo {
+    width: 100%;
+}
+
+.controle-formulario-aplicativo {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.mensagem {
+    margin-top: 15px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao-formulario-aplicativo {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #8CA884;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao-formulario-aplicativo:hover {
+    background-color: #86a168;
+}
+
+/* Fim da pagina de contato */
+
+/* Pagina de projetos/Portifólio */
+
+.projetosContainer {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.projetoItem {
+    margin-top: 20px;
+}
+
+.projetoItem a {
+    font-size: 20px;
+    display: block;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.projetoItem a:hover {
+    background-color: #8CA884;
+    color: #f9f9f9;
+}
+
+.projetoItem p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* Fim da pagina de projetos/Portifólio */
+
+
+/* Footer */
+
+#footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icon {
+    padding: 10px;
+    color: white;
+    /* Definindo a cor dos ícones para branco */
+}
+
+.subMenu_Footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: 1em;
+    gap: 10px;
+}
+
+.subMenu_Footer li a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #8CA884;
+}
+
+.subMenu_Footer li a:hover {
+    color: #86a168;
+}
