@@ -78,7 +78,7 @@
 					<h2>Meu Perfil de Artista no Spotify<br><br></h2>
 					<iframe style="border-radius:12px"
 						src="https://open.spotify.com/embed/artist/5a2mOnOc39Q5U9xLkf6etx?utm_source=generator&theme=0"
-						width="40%" height="102" frameBorder="0" allowfullscreen=""
+						width="90%" height="103px" frameBorder="0" allowfullscreen=""
 						allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
 						loading="lazy"></iframe>
 				</div>
@@ -105,7 +105,15 @@
 		</div>
 	</footer>
 
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			var perfil = document.querySelector('.perfil');
+			var info = document.querySelector('.info');
 
+			perfil.classList.add('loaded');
+			info.classList.add('loaded');
+		});
+	</script>
 </body>
 
 </html>

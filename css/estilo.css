@@ -199,16 +199,65 @@ table {
 
 /* parte de informações sobre mim (resumo) */
 
+.sobreMim {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.perfil,
+.info {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.perfil img {
+    transition: transform 0.5s ease;
+}
+
+.social-icons a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    color: #ff7f50; /* ou outra cor que preferir */
+}
+
+.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.perfil img:hover {
+    transform: scale(1.1);
+}
+
 .profileInfos {
     padding: 10rem;
     display: flex;
     align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.profileInfos.loaded {
+    opacity: 1;
 }
 
 .profileInfos img {
     width: 40%;
     height: 40%;
     margin-right: 20px;
+    opacity: 0;
+    transition: opacity 1s ease;
+    /* Adicionando a transição de opacidade */
+}
+
+.profileInfos img.loaded {
+    opacity: 1;
+    transition: all 1s;
 }
 
 .infomacoesContainer {
@@ -257,6 +306,21 @@ table {
 /* FIM stacks */
 
 /* Parte das formações */
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.course {
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+
+.course.loaded {
+    transform: translateX(0);
+}
 
 .formation,
 .course {
@@ -453,6 +517,22 @@ table {
 /* Fim da pagina de contato */
 
 /* Pagina de projetos/Portifólio */
+
+.projetosContainer {
+    overflow: hidden;
+}
+
+.projetoItem {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.projetoItem.loaded {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 
 .projetosContainer {
     max-width: 600px;

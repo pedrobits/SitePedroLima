@@ -79,7 +79,16 @@
 		</div>
 	</footer>
 
-
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			var projetos = document.querySelectorAll('.projetoItem');
+			projetos.forEach(function (projeto, index) {
+				setTimeout(function () {
+					projeto.classList.add('loaded');
+				}, index * 200); // Ajuste o valor de 200 para controlar a velocidade de aparecimento dos projetos
+			});
+		});
+	</script>
 </body>
 
 </html>
